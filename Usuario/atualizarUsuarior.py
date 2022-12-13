@@ -1,6 +1,11 @@
 from bson.objectid import ObjectId
 import Usuario.buscarUsuario as buscarUsuario
 
+def atualizarFavorito (meuBanquinho, favoritos):
+    minhaColuna = meuBanquinho.Usuario
+    usuario = buscarUsuario.procurarUsuario(meuBanquinho)
+    minhaColuna.update_one({"_id": usuario.get("_id")}, {"$set":{"favoritos": favoritos}})
+
 def atualizarUsuario (meuBanquinho) :
     minhaColuna = meuBanquinho.Usuario
     buscarUsuario.procurarTodesUsuario(meuBanquinho)

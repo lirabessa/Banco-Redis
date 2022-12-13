@@ -136,7 +136,7 @@ while loop:
         case '5':
             print('''
             1 - Adicionar Favoritos ao Redis \n
-            2 - Adicionar item ao Redis \n
+            2 - Adicionar Favoritos do Redis ao MongoDB \n
             0 - Sair \n ''')
             opcaoRedis = input(str("Escolha uma opção: "))
 

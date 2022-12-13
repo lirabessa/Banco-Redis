@@ -1,9 +1,10 @@
-def procurarUsuario (meuBanquinho ) :
+def procurarUsuario (meuBanquinho) :
     minhaColuna = meuBanquinho.Usuario
     minhaBusca = {'nome': 'jj'}
     x = minhaColuna.find(minhaBusca)
 
     for a in x :
+        print(a)
         return(a)
         
 
